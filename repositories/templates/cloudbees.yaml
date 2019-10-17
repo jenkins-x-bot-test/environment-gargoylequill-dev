@@ -1,0 +1,15 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  labels:
+    owner: cloudbees
+    provider: github
+    repository: lighthouse-githubapp
+  name: lighthouse-githubapp
+  namespace: jx
+spec:
+  description: Imported application for cloudbees/lighthouse-githubapp
+  provider: https://github.com
+  providerName: github
+  org: cloudbees
+  repo: lighthouse-githubapp
